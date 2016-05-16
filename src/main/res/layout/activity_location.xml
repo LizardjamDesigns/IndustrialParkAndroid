@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.student.industrialpark.location"
+    android:clickable="true"
+    android:background="#ffffff">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView4"
+        android:maxHeight="100dp"
+        android:maxWidth="100dp"
+        android:minHeight="100dp"
+        android:minWidth="100dp"
+        android:src="@drawable/countyseal"
+        android:contentDescription="@string/countySeal"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:text="@string/titleText3"
+        android:id="@+id/textView3"
+        android:textSize="25sp"
+        android:paddingTop="30dp"
+        android:textColor="#8F0922"
+        android:shadowColor="#000000"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        android:layout_alignTop="@+id/imageView4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="700dp"
+        android:layout_height="150dp"
+        android:id="@+id/imageView5"
+        android:maxWidth="700dp"
+        android:layout_below="@+id/imageView4"
+        android:layout_centerInParent="true"
+        android:background="@drawable/locationimage"
+        android:layout_marginTop="5dp"
+        android:contentDescription="@string/locationImage" />
+
+    <TextView
+        android:layout_width="700dp"
+        android:layout_height="150dp"
+        android:text="@string/locationText"
+        android:id="@+id/textView4"
+        android:layout_below="@+id/imageView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="#98BFFF"
+        android:textColor="#000000"
+        android:textSize="15sp" />
+
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/googleMapButton"
+        android:layout_below="@+id/textView4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/googlemaps"
+        android:layout_alignParentBottom="true"
+        android:contentDescription="@string/googleMaps" />
+</RelativeLayout>
